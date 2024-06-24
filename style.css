@@ -1,0 +1,139 @@
+* {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --BG-COLOR: #f5f4f0;
+  --BORDER-COLOR: #d9d9d9;
+
+  --TEXT-PRIMARY: #1b1b1b;
+  --TEXT-SECONDARY: #333333;
+  --TEXT-TERTIARY: #696969;
+  --TEXT-HEADLINE: #e1624f;
+
+  --ACCENT-BLUE: #0c51a7;
+  --ACCENT-ORANGE: #e95e10;
+  --ACCENT-PINK: #e5245e;
+  --ACCENT-PURPLE: #591b98;
+}
+
+.headline {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold; /* a fonte fica em negrito */
+  color: var(--TEXT-HEADLINE);
+  text-transform: uppercase; /* a fonte fica com todas as letras em mai�sculo */
+}
+
+.page {
+  width: 1120px;
+  padding: 88px 80px 48px 80px;
+  margin: 48px auto;
+  background-color: var(--BG-COLOR);
+  border-radius: 24px;
+}
+
+body {
+  width: 100%;
+  
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 65px;
+}
+
+.busan {
+  margin: 8px auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+
+  > h1 {
+    color: var(--text-primary, #1b1b1b);
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  > h6 {
+    color: var(--text-headline, #e1624f);
+    text-transform: uppercase;
+  }
+
+  > img {
+    width: 100%;
+    height: 660px;
+    align-self: stretch;
+    border-radius: 28px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+
+  > p {
+    width: 1120px;
+    color: var(--TEXT-SECONDARY);
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    align-self: center;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: #d9d9d9;
+}
+
+.destinos {
+  width: 100%;
+
+  > h2 {
+    color: var(--TEXT-PRIMARY);
+
+    /* h2 */
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  > h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  > h6 {
+    color: var(--TEXT-HEADLINE);
+  }
+
+  > p {
+    align-self: stretch;
+    color: var(--TEXT-SECONDARY);
+
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  > div ul li::marker {
+    color: var(--ACCENT-BLUE);
+  }
+}
+
+.destinos img {
+  width: 100%;
+  height: 350px;
+  align-self: stretch;
+  object-fit: cover; /* Ajusta a propor��o da imagem para caber no container dispon�vel pra ela sem distorcer */
+  margin-top: 44px;
+  border-radius: 28px;
+}
+
+footer {
+  text-align: center;
+}
